@@ -64,6 +64,7 @@ li {
 }
 
 .dropdown-content {
+  display: none; /* hides dropdown content */
   min-width: 160px;
 }
 
@@ -85,4 +86,8 @@ li {
 
 .dropdown-content li a:hover {
   background-color: var(--font-secondary-color);
+}
+
+.show {
+  display: block;
 }
