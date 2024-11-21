@@ -3,6 +3,7 @@
   --secondary-background: #2d2d2d;
   --secondary-hover: #3b3b3b;
   --main-accent: #5ccc37;
+  --secondary-accent: #4caa2d;
   --font-color: white;
   --font-secondary-color: #cacaca;
 }
@@ -32,4 +33,56 @@ body {
 input {
   color-scheme: dark;
   border-width: 1px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown button,
+a {
+  color: var(--font-color);
+}
+
+.dropdown button,
+li {
+  cursor: pointer;
+}
+
+.dropdown button {
+  padding: 15px;
+  border: none;
+  font-size: 1.6rem;
+  font-family: "Inter";
+  background-color: var(--main-accent);
+}
+
+.dropdown button:hover,
+.dropdown button:focus {
+  background-color: var(--secondary-accent);
+}
+
+.dropdown-content {
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: var(--contents-background);
+  padding: 15px;
+}
+
+.dropdown-content li {
+  background-color: var(--font-color);
+  padding: 0;
+}
+
+.dropdown-content li a {
+  padding: 15px;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: var(--font-secondary-color);
 }
